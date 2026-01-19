@@ -12,7 +12,7 @@
 </head>
 <body class="inter-fonts">
     <!-- header -->
-    <header class="bg-pri text-white border-b w-full">
+    <header class="bg-pri text-white w-full">
         <nav class="max-w-[1200px] mx-auto flex justify-between items-center py-[30px] px-2.5 lg:px-0">
             <!-- <h2>Tech<span>Wave</span></h2> -->
             <img class="w-[30%] md:w-[20%]" src="assets/TechWave.png" alt="">
@@ -29,16 +29,19 @@
         <!-- hr -->
         <hr>
         <!-- hero section -->
-        <section class="max-w-[1200px] mx-auto bg-[url(./assets/hero-bg.png)] w-full h-auto bg-cover bg-center bg-no-repeat px-2.5 lg:px-0 text-center md:my-[100px] my-20">
-            <div class="btn-g w-[280px] h-[280px] md:w-[344px] md:h-[334px] mx-auto rounded-full border-8 border-[#2A186C] flex justify-center items-center mb-10">
-                <!-- <img class="w-20 md:[100px]" src="./assets/microphone.png" alt=""> -->
-                <i class="fa-solid fa-microphone text-[120px] md:text-[200px]"></i>
-            </div>
-            <h2 class="md:text-[60px] font-bold md:leading-[73px] text-[40px] leading-12">TechWave</h2>
-            <p class="mt-2 mb-6">Your daily dose of tech insights, productivity hacks, and personal growth</p>
-            <div class="flex justify-center items-center gap-2">
-                <button class=" text-sm md:text-base bg-[linear-gradient(47.64deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))] py-3 px-5 rounded-full hover:opacity-90"><i class="fa-solid fa-ear-listen "></i> Listen on Spotify</button>
-                <button class="border-[#00FF88] border bg-none text-sm md:text-base text-[#00FF88] py-3 px-5 hover:py-3 hover:px-5 rounded-full md:flex justify-center items-center gap-2 hover:border-white hover:text-white transition-all"><i class="fa-solid fa-envelope"></i> Subscribe</button>
+        
+        <section class="bg-[url(./assets/hero-bg.png)] w-full h-auto bg-cover bg-center bg-no-repeat">
+            <div class="max-w-[1200px] mx-auto px-2.5 lg:px-0 text-center md:py-[100px] py-20">
+                <div class="btn-g w-[280px] h-[280px] md:w-[344px] md:h-[334px] mx-auto rounded-full border-8 border-[#2A186C] flex justify-center items-center mb-10">
+                    <!-- <img class="w-20 md:[100px]" src="./assets/microphone.png" alt=""> -->
+                    <i class="fa-solid fa-microphone text-[120px] md:text-[200px]"></i>
+                </div>
+                <h2 class="md:text-[60px] font-bold md:leading-[73px] text-[40px] leading-12">TechWave</h2>
+                <p class="mt-2 mb-6">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                <div class="flex justify-center items-center gap-2">
+                    <button class=" text-sm md:text-base bg-[linear-gradient(47.64deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))] py-3 px-5 rounded-full hover:opacity-90"><i class="fa-solid fa-ear-listen "></i> Listen on Spotify</button>
+                    <button class="border-[#00FF88] border bg-none text-sm md:text-base text-[#00FF88] py-3 px-5 hover:py-3 hover:px-5 rounded-full md:flex justify-center items-center gap-2 hover:border-white hover:text-white transition-all"><i class="fa-solid fa-envelope"></i> Subscribe</button>
+                </div>
             </div>
         </section>
     </header>
@@ -47,8 +50,29 @@
 
     </main>
 
-    <footer>
-        
+    <footer class="bg-[url(./assets/footer-bg.png)] w-full h-auto bg-cover bg-center bg-no-repeat">
+        <div class="max-w-[1200px] mx-auto px-2.5 lg:px-0 text-center md:py-[120px] py-20 text-[rgba(255,255,255,1)]">
+            <img class="mx-auto" src="./assets/TechWave.png" alt="">
+            <div class="flex justify-center items-center gap-10 my-8">
+                <div class="flex justify-center items-center gap-2">
+                    <img src="./assets/spotify.png" alt="">
+                    <p>Spotify</p>
+                </div>
+                <div class="flex justify-center items-center gap-2">
+                    <img src="./assets/apple-podcast.png" alt="">
+                    <p>Apple Podcasts</p>
+                </div>
+                <div class="flex justify-center items-center gap-2">
+                    <img src="./assets/youtube-podcast.png" alt="">
+                    <p>YouTube</p>
+                </div>
+                <div class="flex justify-center items-center gap-2">
+                    <img src="./assets/twitter.png" alt="">
+                    <p>Twitter</p>
+                </div>
+            </div>
+            <span>© 2026 TechWave Podcast. All rights reserved.</span>
+        </div>
     </footer>
 </body>
 </html>
