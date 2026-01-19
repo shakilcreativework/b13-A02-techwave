@@ -12,16 +12,19 @@
 </head>
 <body class="inter-fonts">
     <!-- header -->
-    <header class="bg-pri text-white py-[30px] border-b">
+    <header class="bg-pri text-white py-[30px] px-2.5 md:px-0 border-b w-full">
         <nav class="max-w-[1200px] mx-auto flex justify-between items-center">
             <!-- <h2>Tech<span>Wave</span></h2> -->
-            <img src="assets/TechWave.png" alt="">
-            <ul class="flex justify-center items-center gap-[30px]">
+            <img class="w-[30%] md:w-[20%]" src="assets/TechWave.png" alt="">
+            <ul class="md:flex hidden justify-center items-center gap-[30px]">
                 <li><a href="">About</a></li>
                 <li><a href="">Episodes</a></li>
                 <li><a href="">Host</a></li>
             </ul>
-            <button class="btn-g py-3 px-4 rounded-full flex justify-center items-center gap-2">Subscribe <i class="fa-solid fa-arrow-right-long"></i></button>
+            <button class="hidden btn-g py-3 px-4 rounded-full md:flex justify-center items-center gap-2">Subscribe <i class="fa-solid fa-arrow-right-long"></i></button>
+            <div class="block md:hidden">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </div>
         </nav>
     </header>
 </body>
