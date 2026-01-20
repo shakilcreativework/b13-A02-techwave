@@ -22,3 +22,86 @@
     background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
 }
 
+
+/* ================================================================================================================ */
+
+/* animation */
+@keyframes slideFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-160px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Scroll-based animation (modern browsers) */
+.scroll-left {
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: slideFromLeft linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+/* Fallback (older browsers) */
+@supports not (animation-timeline: view()) {
+    .scroll-left {
+        animation: slideFromLeft 0.9s ease forwards;
+    }
+}
+
+@keyframes slideFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(160px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Scroll-based animation (modern browsers) */
+.scroll-right {
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: slideFromRight linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+/* Fallback (older browsers) */
+@supports not (animation-timeline: view()) {
+    .scroll-right {
+        animation: slideFromRight 0.9s ease forwards;
+    }
+}
+
+@keyframes slideFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(160px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Scroll-based animation (modern browsers) */
+.scroll-top {
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: slideFromTop linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+/* Fallback (older browsers) */
+@supports not (animation-timeline: view()) {
+    .scroll-top {
+        animation: slideFromTop 0.9s ease forwards;
+    }
+}
+
+/* ================================================================================================================ */
